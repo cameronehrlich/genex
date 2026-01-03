@@ -122,6 +122,18 @@ This is not a complete database. If you need comprehensive clinical analysis, us
 
 Run `genex --help` or `genex <command> --help` for details.
 
+## Claude Code Skill
+
+genex includes a skill for [Claude Code](https://claude.ai/code) that lets you query your genetic data conversationally:
+
+```
+> /genex what's my APOE status?
+> /genex do I have any pharmacogenomic findings?
+> /genex show my ancestors from Germany
+```
+
+To install the skill, copy `skills/genex.skill` to your Claude Code skills directory or import it via the Claude Code settings.
+
 ## Development
 
 ```bash
