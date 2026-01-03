@@ -1,6 +1,6 @@
 # genex
 
-Query your 23andMe data from the terminal. Offline. Private. Local.
+Explore your genetic data and family tree from the terminal. Offline. Private. Local.
 
 ## Install
 
@@ -19,8 +19,8 @@ pip install -e .
 ## Quick Start
 
 ```bash
-# Point genex at your 23andMe download folder
-genex init ~/Downloads/23andme-data/
+# Point genex at a folder with your data files
+genex init ~/Downloads/genetic-data/
 
 # Look up a specific SNP
 genex snp rs429358
@@ -31,21 +31,27 @@ genex health
 # View drug metabolism info
 genex pharma
 
-# If you have a GEDCOM file, explore your family tree
+# Explore your family tree
 genex tree summary
 genex tree ancestors --name "John"
+genex tree search "Berlin"
 ```
 
 ## What You Need
 
 1. **Python 3.10+**
 
-2. **Your 23andMe raw data**
-   - Log into 23andMe → Settings → 23andMe Data → Download Your Data
-   - You'll get a zip file. Unzip it somewhere.
+2. **Any of these data files** (or both):
 
-3. **Optional: GEDCOM file** for family tree features
-   - Export from Ancestry, FamilySearch, or any genealogy software
+   **Genetic data (23andMe)**
+   - Log into 23andMe → Settings → Download Your Data
+   - Unzip the downloaded file
+
+   **Family tree (GEDCOM)**
+   - Export from Ancestry, FamilySearch, MyHeritage, or any genealogy software
+   - Standard `.ged` format
+
+Put your files in a folder and run `genex init` on it. genex auto-detects file types.
 
 ## Example Output
 
@@ -95,9 +101,9 @@ This is not a complete database. If you need comprehensive clinical analysis, us
 ## Limitations
 
 - **Not medical advice.** Seriously. Don't make health decisions based on this.
-- Only 23andMe format is supported (AncestryDNA planned)
-- The SNP database is curated but not exhaustive
-- GEDCOM parsing handles common formats but may miss edge cases
+- Genetic data: 23andMe format supported (AncestryDNA format planned)
+- Family trees: Standard GEDCOM format from any source (Ancestry, FamilySearch, MyHeritage, etc.)
+- The SNP database is curated (~450 variants) but not exhaustive
 
 ## Commands
 
@@ -134,4 +140,6 @@ MIT. See [LICENSE](LICENSE).
 
 ## Acknowledgments
 
-SNP annotations compiled from public sources including ClinVar, PharmGKB, and SNPedia. This project is not affiliated with 23andMe.
+SNP annotations compiled from public sources including ClinVar, PharmGKB, and SNPedia.
+
+This project is not affiliated with 23andMe, Ancestry, or any genetic testing company.
