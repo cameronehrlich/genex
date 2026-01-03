@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# genex user data - NEVER COMMIT
+# These patterns protect against accidentally committing genetic data
+~/.genex/
+*.genex.db
+
+# 23andMe files
+genome_*.txt
+genome_*.zip
+*23andme*.txt
+*23andme*.zip
+
+# Ancestry files
+*ancestry*.csv
+*ancestry*.zip
+
+# GEDCOM family trees (may contain real names)
+*.ged
+
+# Other genetic data formats
+*.vcf
+*.vcf.gz
+*.bcf
+
+# Personal data directories
+data/
+personal/
+private/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local development
+*.local
+.env.local

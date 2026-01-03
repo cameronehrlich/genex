@@ -1,0 +1,144 @@
+0 HEAD
+1 SOUR TestGen
+2 VERS 1.0
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Alex /TestPerson/
+2 GIVN Alex
+2 SURN TestPerson
+1 SEX M
+1 BIRT
+2 DATE 15 MAR 1990
+2 PLAC Springfield, State
+1 FAMC @F1@
+0 @I2@ INDI
+1 NAME Robert /TestPerson/
+2 GIVN Robert
+2 SURN TestPerson
+1 SEX M
+1 BIRT
+2 DATE 10 JUN 1960
+2 PLAC Riverside, State
+1 FAMS @F1@
+1 FAMC @F2@
+0 @I3@ INDI
+1 NAME Sarah /Smith/
+2 GIVN Sarah
+2 SURN Smith
+1 SEX F
+1 BIRT
+2 DATE 22 SEP 1962
+2 PLAC Lakewood, State
+1 FAMS @F1@
+1 FAMC @F3@
+0 @I4@ INDI
+1 NAME William /TestPerson/
+2 GIVN William
+2 SURN TestPerson
+1 SEX M
+1 BIRT
+2 DATE 5 FEB 1930
+2 PLAC Oldtown, State
+1 DEAT
+2 DATE 12 NOV 2010
+2 PLAC Riverside, State
+1 FAMS @F2@
+0 @I5@ INDI
+1 NAME Margaret /Johnson/
+2 GIVN Margaret
+2 SURN Johnson
+1 SEX F
+1 BIRT
+2 DATE 18 APR 1932
+2 PLAC Hillside, State
+1 DEAT
+2 DATE 3 JUL 2015
+2 PLAC Riverside, State
+1 FAMS @F2@
+0 @I6@ INDI
+1 NAME James /Smith/
+2 GIVN James
+2 SURN Smith
+1 SEX M
+1 BIRT
+2 DATE 14 AUG 1935
+2 PLAC Valleyview, State
+1 DEAT
+2 DATE 28 DEC 2018
+2 PLAC Lakewood, State
+1 FAMS @F3@
+0 @I7@ INDI
+1 NAME Elizabeth /Brown/
+2 GIVN Elizabeth
+2 SURN Brown
+1 SEX F
+1 BIRT
+2 DATE 7 DEC 1938
+2 PLAC Mountainside, State
+1 FAMS @F3@
+0 @I8@ INDI
+1 NAME Henry /TestPerson/
+2 GIVN Henry
+2 SURN TestPerson
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 1900
+2 PLAC Oldtown, State
+1 DEAT
+2 DATE 15 MAY 1975
+2 PLAC Oldtown, State
+1 FAMS @F4@
+0 @I9@ INDI
+1 NAME Anna /Miller/
+2 GIVN Anna
+2 SURN Miller
+1 SEX F
+1 BIRT
+2 DATE 12 MAR 1902
+2 PLAC Oldtown, State
+1 DEAT
+2 DATE 20 OCT 1980
+2 PLAC Oldtown, State
+1 FAMS @F4@
+0 @I10@ INDI
+1 NAME Emily /TestPerson/
+2 GIVN Emily
+2 SURN TestPerson
+1 SEX F
+1 BIRT
+2 DATE 20 NOV 1992
+2 PLAC Springfield, State
+1 FAMC @F1@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I1@
+1 CHIL @I10@
+1 MARR
+2 DATE 15 JUN 1988
+2 PLAC Springfield, State
+0 @F2@ FAM
+1 HUSB @I4@
+1 WIFE @I5@
+1 CHIL @I2@
+1 MARR
+2 DATE 20 MAY 1958
+2 PLAC Riverside, State
+0 @F3@ FAM
+1 HUSB @I6@
+1 WIFE @I7@
+1 CHIL @I3@
+1 MARR
+2 DATE 10 SEP 1960
+2 PLAC Lakewood, State
+0 @F4@ FAM
+1 HUSB @I8@
+1 WIFE @I9@
+1 CHIL @I4@
+1 MARR
+2 DATE 25 DEC 1928
+2 PLAC Oldtown, State
+0 TRLR
